@@ -14,4 +14,4 @@ python emoji.py
 
 ## To do List
 
-- [] 代理
+- [ ] 代理
