@@ -15,3 +15,5 @@ python emoji.py
 ## To do List
 
 - [ ] 代理
+- [ ] 改用`async`
+- [ ] Go 语言重构
