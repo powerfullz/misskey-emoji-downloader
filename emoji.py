@@ -62,7 +62,7 @@ if not(os.path.exists(directory)):
 os.chdir(directory)
 
 for catgs in finalcatg:
-    if not(os.path.exists(directory)):
+    if not(os.path.exists(catgs)):
         os.mkdir(catgs)
 
 # 开始下载
