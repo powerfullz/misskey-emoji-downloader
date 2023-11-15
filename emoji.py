@@ -14,7 +14,6 @@ data = json.loads(requests.get(jsonUrl).content)
 # file = open(path, encoding="utf8")
 # data = json.load(file)
 
-
 # categories 去重的笨办法，管他的，先写出来再说
 categories = []
 for emj in data['emojis']:
@@ -26,7 +25,6 @@ for emj in data['emojis']:
         if catgs == catg:
             exists = True
             break
-    
     if not(exists):
         categories.append(catg)
 
@@ -43,13 +41,8 @@ finalcatg = []  # 最终想要的分类
 if userInput == "":
     finalcatg = categories
 else:
-    temp = userInput.split(",")
-    wanted = []
-    for numbers in temp:
-        wanted.append(int(numbers) - 1)
-    
-    for index in wanted:
-        finalcatg.append(categories[index])
+    for numbers in userInput.split(","):
+        finalcatg.append(categories[int(numbers) - 1])
 
 # 建立分类目录
 userInputDir = input("请选择要下载到的目录（默认./myEmojis)：")
