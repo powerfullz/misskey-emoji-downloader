@@ -56,7 +56,7 @@ os.chdir(directory)
 
 for catgs in finalcatg:
     if not(os.path.exists(catgs)):
-        os.mkdir(catgs)
+        os.makedirs(catgs)
 
 # 开始下载
 def downloadImage(url, savePath):
