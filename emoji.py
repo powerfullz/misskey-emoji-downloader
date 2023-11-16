@@ -51,7 +51,7 @@ if userInputDir != "":
     directory = userInputDir
 
 if not(os.path.exists(directory)):
-    os.mkdir(directory)
+    os.makedirs(directory)
 os.chdir(directory)
 
 for catgs in finalcatg:
