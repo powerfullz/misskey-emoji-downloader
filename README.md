@@ -2,8 +2,12 @@
 
 批量下载 Misskey 实例表情包的工具。Now written in Golang.
 
+### 用法
+
+终端内运行，遵循程序指示。
 
 以下是旧的 Readme：
+
 ---
 
 现学现卖写的一个 Misskey 偷表情工具，inspired by [Starainrt/emojidownloader](https://github.com/Starainrt/emojidownloader)
